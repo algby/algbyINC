@@ -1,0 +1,11 @@
+
+<div class="span2">
+  <aside>
+  <h4>Connect With Us</h4>
+  <ul>
+    {% for pg in html %}
+      <li><a href="web/{{ pg|e }}">{{pg}}</a></li>
+    {% endfor %}
+  </ul>
+  </aside>
+</div>

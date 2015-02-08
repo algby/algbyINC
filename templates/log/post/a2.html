@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="dmca copyright policy and fair use guide">
+<meta name="keywords" content="dmca, copyright policy, fair use guide">
+<meta name="author" content="Simon Bhattacharya">
+<title>Very Basic Document</title>
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet'>
+</head>
+
+<div class="container">
+
+
+<body>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+<header>
+<h1><a href="#">Very Basic Document</a></h1>
+<h2>A tag line might go here</h2>
+</header>
+<section>
+<article>
+<h3><a href="#">First Article Title</a></h3>
+<img src="images/flower.jpg" alt="flower">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. </p>
+</article>
+<article>
+<h3><a href="#">Second Article Title</a></h3>
+<img src="images/tree.jpg" alt="tree">
+<p>Praesent libero. Sed cursus ante dapibus diam.</p>
+</article>
+</section>
+
+<div class="span2">
+
+<aside>
+<h4>Connect With Us</h4>
+<ul>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Facebook</a></li>
+</ul>
+</aside>
+
+</div>
+
+</div>
+
+
+<ul>
+    {% for href, caption in [('index.html', 'Index'), ('about.html', 'About'),('downloads.html', 'Downloads')] %}
+    <li><a href="{{ href }}">{{ caption }}</a></li>
+    {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+<div class="row">
+
+<div class="col-*-*"></div>
+<div class="col-*-*"></div>
+
+</div>
+
+<div class="row">
+
+<div class="col-*-*"></div>
+<div class="col-*-*"></div>
+
+</div>
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+<footer>
+<p>All rights reserved.</p>
+</footer>
+</body>
+</html>

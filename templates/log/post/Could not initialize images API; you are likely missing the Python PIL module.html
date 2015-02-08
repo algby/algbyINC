@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Simon Bhattacharya">
+<title><h1>Could not initialize images API; you are likely missing the Python PIL module</h1></title>
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/bootstrap.css">
+
+<link href='http://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet'>
+</head>
+<body>
+<div class="cr">
+<br><br><br>
+<em>Could not initialize images API; you are likely missing the Python PIL module</em>
+<br><br><br>
+
+<div class="container">
+
+
+<div class="alert alert-danger ">Could not initialize images API; you are likely missing the Python &#8220;PIL&#8221; module.</div></p>
+<div class="alert alert-danger ">ImportError: No module named PIL</div>
+<pre class="brush: python; title: ; notranslate" title="">import PIL</pre>
+<div class="panel-group " id="oscitas-accordion-0"> <div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#oscitas-accordion-0" href="#details-0-0">
+environment:
+</a>
+</h4>
+</div>
+<div id="details-0-0" class="panel-collapse collapse ">
+<div class="panel-body"><ul class="list-group "><li class="list-group-item">OS: ubuntu 12.04 desktop 64 bit | windows</li>
+<li class="list-group-item">gae 1.8.8</li>
+<li class="list-group-item">python 2.7.3</li>
+</ul></div>
+</div>
+</div></div>
+<div class="alert alert-success ">Debugging</p>
+<p><ul class="list-group "><li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> <a href="#Download and Install">Download and Install</a></li>
+<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> <a href="#app.yaml">app.yaml</a></li>
+<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> <a href="#pythonpath">pythonpath</a></li>
+</ul></p>
+<p></div>
+<p><a name="Download and Install"></a></p>
+<p><a title="Download PIL" href="http://effbot.org/downloads#pil" target="_blank"><div class="well  "></a></p>
+<p><a title="Download PIL" href="http://effbot.org/downloads#pil" target="_blank"><div class="alert alert-info "></a><a title="Download PIL" href="http://effbot.org/downloads#pil" target="_blank">Download PIL</a><br/>
+<a title="python 64 bit modules for windows" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/" target="_blank">Python 64 bit modules for windows</a><br/>
+</div></p>
+<div class="alert alert-info "><strong>Install PIL</strong></p>
+<p><a title="follow installation instructions for gae" href="https://developers.google.com/appengine/docs/python/images/installingPIL" target="_blank">installation instructions for gae</a></p>
+<pre class="brush: plain; title: ; notranslate" title="">sudo apt-get install python-imaging</pre>
+<p></div>
+<p><a title="Download PIL" href="http://effbot.org/downloads#pil" target="_blank"></div></a></p>
+<p><a name="app.yaml"></a></p> 
+<div class="well  "></p>
+<p><div class="alert alert-info ">Include PIL in app.yaml like so:</div></p>
+<pre class="brush: plain; title: ; notranslate" title="">
+libraries:
+- name: PIL
+version: &quot;1.1.7&quot;
+</pre>
+<p>check <a title="google app engine 3rd party libraries" href="https://developers.google.com/appengine/docs/python/tools/libraries27" target="_blank">google app engine 3rd party libraries</a></p>
+<p></div>
+<p><a name="pythonpath"></a></p>
+<div class="well  "></p>
+<p><div class="alert alert-info "><strong>Check PYTHONPATH</strong></div></p>
+<p>unix-like</p>
+<pre class="brush: plain; title: ; notranslate" title="">
+import sys
+from pprint import pprint as pp
+pp(sys.path)
+</pre>
+<p>command in your terminal to see what folders are in your PYTHONPATH.</p>
+<pre class="brush: plain; title: ; notranslate" title="">python -c &quot;import sys, pprint; pprint.pprint(sys.path)&quot;</pre>
+<p>windows</p>
+<pre class="brush: plain; title: ; notranslate" title="">echo %PATH%</pre>
+<p><strong>add / set / append module or python to sys env or PYTHONPATH environment variables windows</strong></p>
+<pre class="brush: plain; title: ; notranslate" title="">
+set PYTHONPATH=%PYTHONPATH%;C:\Python27
+</pre>
+<p>OR</p>
+<pre class="brush: plain; title: ; notranslate" title="">
+set path=C:\Python27
+</pre>
+<p>unix-like</p>
+<pre class="brush: plain; title: ; notranslate" title="">
+export PYTHONPATH=$PYTHONPATH:/host/Python27/Lib/site-packages
+</pre>
+<p></div>
+
+<pre class="prettyprint lang-py">
+import sys
+from pprint import pprint as pp
+pp(sys.path)
+
+</pre>
+
+<p style="font-family: Papyrus, fantasy; color: orange">
+	Powered by: <a href="http://www.simonbhatta4ya.me" style="color: #85C226">Simon Bhattacharya</a>.</p>
+<br><br>
+<!--<a href="http://www.algby.tk/">Home</a>-->
+</div>
+</div>
+</body>
+</html>
+<pre id='code' class='prettyprint'>
+<code>
+import sys
+from pprint import pprint as pp
+pp(sys.path)
+</code>
+</pre>
+
+red
+Could not initialize images API; you are likely missing the Python PIL module
+ImportError: No module named PIL
+
+grey
+import PIL
+
+well
+grey
+environment: 
+green
+Debugging
+well
+check box	 Download and Install http://algby.com/initialize-images-api-likely-missing-python-pil-module/#Download%20and%20Install
+check box	 app.yaml http://algby.com/initialize-images-api-likely-missing-python-pil-module/#app.yaml
+check box	pythonpath http://algby.com/initialize-images-api-likely-missing-python-pil-module/#pythonpath
+/well
+
+well
+blue
+Download PIL http://effbot.org/downloads#pil
+Python 64 bit modules for windows http://www.lfd.uci.edu/~gohlke/pythonlibs/
+blue
+Install PIL
+installation instructions for gae https://developers.google.com/appengine/docs/python/images/installingPIL
+grey
+sudo apt-get install python-imaging
+/well
+
+well
+blue
+Include PIL in app.yaml like so:
+grey
+libraries:
+- name: PIL
+version: "1.1.7"
+
+check google app engine 3rd party libraries https://developers.google.com/appengine/docs/python/tools/libraries27
+/well
+
+well
+blue
+Check PYTHONPATH
+grey
+unix-like
+import sys
+from pprint import pprint as pp
+pp(sys.path)
+
+command in your terminal to see what folders are in your PYTHONPATH.
+python -c "import sys, pprint; pprint.pprint(sys.path)"
+
+windows
+
+echo %PATH%
+
+add / set / append module or python to sys env or PYTHONPATH environment variables windows
+
+set PYTHONPATH=%PYTHONPATH%;C:\Python27
+
+OR
+
+set path=C:\Python27
+
+unix-like
+
+export PYTHONPATH=$PYTHONPATH:/host/Python27/Lib/site-packages
+
+
+
+<div class="container">
+
+
+<div class="row">
+
+<div class="col-*-*"></div>
+<div class="col-*-*"></div>
+
+</div>
+
+<div class="row">...</div>
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+

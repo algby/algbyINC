@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="repair package manager ubuntu 12.04">
+<meta name="keywords" content="error-logs">
+<meta name="author" content="Simon Bhattacharya">
+<title>repair package manager ubuntu 12.04</title>
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet'>
+</head>
+
+
+<body>
+
+<header>
+<h1><a href="#">repair package manager ubuntu 12.04</a></h1>
+</header>
+
+<section>
+<article>
+
+<h3><a href="#">repair package manager ubuntu 12.04</a></h3>
+<img src="../img/ubuntu12.04-package-manager-error.jpg" alt="ubuntu12.04-package-manager-error">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. </p>
+
+<br>
+
+LOG: while
+
+<br>
+
+<pre>
+sudo dpkg -i package_name.dep
+</pre>
+
+<p>
+fails installation && Ubuntu Package Manager shows the error
+</p>
+<br>
+<p>
+Items cannot be installed or removed until the package catalog is repaired. Do you want to repair it now? Once update
+Manager has finished the repairs, you can close it and return to the store.
+</p>
+<br>
+<pre>
+sudo apt-get autoremove && sudo apt-get autoclean
+sudo apt-get update && sudo apt-get -y upgrade --fix-missing
+</pre>
+
+OR<br>
+
+<pre>
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get -f install && sudo dpkg --configure -a && sudo apt-get autoclean && sudo apt-get autoremove
+</pre>
+
+</article>
+</section>
+
+<div class="span2">
+
+<aside>
+<h4>Connect With Us</h4>
+<ul>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Facebook</a></li>
+</ul>
+</aside>
+
+</div>
+
+
+<footer>
+<p>All rights reserved.</p>
+</footer>
+</body>
+</html>

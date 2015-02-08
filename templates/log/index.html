@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="algby">
+<meta name="keywords" content="algby">
+<meta name="author" content="Simon Bhattacharya">
+<meta name="robots" content="index,follow">
+<title>algby</title>
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet'>
+</head>
+<body>	
+	<?php include_once("analyticstracking.php") ?>	
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<p>Powered by: <a href="http://www.simonbhatta4ya.me" class="vip">Simon Bhattacharya</a>.</p>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<footer class="column">
+Copyright © algby 2013. All rights reserved. 
+The <a href="http://www.algby.tk/sitemap/">content</a> is copyrighted to <a href="http://www.simonbhatta4ya.me" class="vip">Simon Bhattacharya</a> and may not be reproduced on other websites. <br>
+<div>
+	<a href="web/about.html">about</a> | <a href="contact.html">contact</a> | <a href="tos.html">terms & conditions</a> | <a href="policy.html">privacy policy</a> | <a href="tos.html#payments">refund & cancellation policies</a> | <a href="copyright.html">copyright</a> |<a href="stats.html">site stats</a> | <a href="http://algby.tk/support/">support</a>
+</div>
+<ul>
+	{% for href, caption in [('contact.html', 'Contact'), ('about.html', 'About'), ('tos.html', 'Terms & Conditions'), ('privacy.html', 'privacy policy'), ('copyright.html', 'copyright')] %}
+	<li>
+		<a href="web/{{ href }}">{{ caption }}</a>
+	</li>
+	{% endfor %}
+</ul>
+
+
+</footer>
+</body>
+</html>

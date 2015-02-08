@@ -1,0 +1,18 @@
+<footer class="column">
+Copyright © algby 2013. All rights reserved. 
+The <a href="http://www.algby.tk/sitemap/">content</a> is copyrighted to <a href="http://www.simonbhatta4ya.me" class="vip">Simon Bhattacharya</a> and may not be reproduced on other websites. <br>
+<div>
+	<a href="web/about.html">about</a> | <a href="contact.html">contact</a> | <a href="tos.html">terms & conditions</a> | <a href="policy.html">privacy policy</a> | <a href="tos.html#payments">refund & cancellation policies</a> | <a href="copyright.html">copyright</a> |<a href="stats.html">site stats</a> | <a href="http://algby.tk/support/">support</a>
+</div>
+<div><img src="img/Untitled.png"></div>
+<ul>
+	{% for href, caption in [('contact.html', 'Contact'), ('about.html', 'About'), ('tos.html', 'Terms & Conditions'), ('policy.html', 'privacy policy'), ('copyright.html', 'copyright')] %}
+	<li>
+		<a href="web/{{ href }}">{{ caption }}</a>
+	</li>
+	{% endfor %}
+</ul>
+
+
+</footer>
+</div>

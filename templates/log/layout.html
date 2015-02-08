@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	{% block head %}
+        <title>A. L. G. B. Y. - {% block title %}{% endblock %}</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="algby">
+		<meta name="keywords" content="algby">
+		<meta name="author" content="Simon Bhattacharya">
+		<meta name="robots" content="index,follow">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="pics/favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet'>
+	    <!-- Bootstrap -->
+	    <!-- <link href="/css/bootstrap.css" rel="stylesheet" media="screen"> -->
+
+	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="../../assets/js/html5shiv.js"></script>
+	      <script src="../../assets/js/respond.min.js"></script>
+	    <![endif]-->
+	    {% endblock %}
+    </head>
+    <body>
+
+    	{% include 'log/header.html' %}
+
+    	<div class="container">{% block content %}{% endblock %}</div>
+
+        {% include 'log/footer.html' %}
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="//code.jquery.com/jquery.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.js"></script>
+
+    </body>
+</html>

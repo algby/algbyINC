@@ -1,0 +1,41 @@
+{% extends "log/layout.html" %}
+{% block title %}Powered by: Simon Bhattacharya.{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { background-color: #ffff99; }
+    </style>
+{% endblock %}
+{% block content %}
+<div class="page-header">
+	<h1>GAE Jinja2 Bootstrap Skeleton</h1>
+</div>
+<p class="lead">A Skeleton prototype GAE-APP for <span class="important">prototyping</span> using Jinja2 and Twitter Bootstrap</p>
+<div class='container'>
+  <p>Hi there - I'm {{ name }}, and I {{ verb }} programming!</p>
+</div>
+<div class="container">
+<h3>.mainstream.articles</h3>
+<a href="log/Could not initialize images API; you are likely missing the Python PIL module.html">Could not initialize images API; you are likely missing the Python PIL module</a><br>
+<a href="log/repair package manager ubuntu 12.html">repair package manager ubuntu 12</a><br>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<p>Powered by: <a href="http://www.simonbhatta4ya.me" class="vip">Simon Bhattacharya</a>.</p>
+<div><img src="img/google-app-engine.ico"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="span2">
+	<aside>
+	<h4>Connect With Us</h4>
+	<ul>
+		{% for pg in html %}
+			<li><a href="web/{{ pg|e }}">{{pg}}</a></li>
+		{% endfor %}
+	</ul>
+	</aside>
+</div>
+
+
+{% endblock %}

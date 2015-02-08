@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Link to the Bootstrap CSS from a CDN -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+  rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3 class="text-muted">Welcome</h3>
+    </div>
+    <hr />
+    <div class="row">
+      <p>This is a template rendered by Django's templating system.</p>
+      <!--
+      'time' is a context variable passed from Django's view.
+      The template tag with set brackets is used to print the value of the variable
+      within the tag. Here, the value of the context variable
+      'time' is rendered.
+    -->
+    <p>
+      Current server time at the time of rendering the template is
+      {{ time }}. This was passed as a context variable from the
+      server-side view. You can pass as many variables as you want
+      in a dictionary.
+    </p>
+  </div>
+</div>
+</body>
+</html>

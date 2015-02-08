@@ -1,0 +1,78 @@
+body 
+	{
+    background-color: #000;
+    font-family: 'Marcellus SC', serif;
+    text-align: center;
+    }
+body .abt
+			{
+			    background-color: #0D0D0D;
+			    font-family: 'Iceland', cursive;
+			    color: #fff;
+			    font-size:16px;
+			    text-align: center;
+
+			}
+body .tos 
+			{
+			    background-color: #0D0D0D;
+			    font-family: 'Marcellus SC', serif;
+			    color: #fff;
+			    font-size:16px;
+			    text-align: center;				
+			}
+body .pp 
+			{
+			    background-color: #0D0D0D;
+			    font-family: 'Alegreya SC', serif;
+			    color: #fff;
+			    font-size:16px;
+			    text-align: center;				
+			}
+body .cr 
+			{
+			    background-color: #0D0D0D;
+			    font-family: 'Alegreya SC', serif;
+			    color: #fff;
+			    font-size:16px;
+			    text-align: center;				
+			}
+body .page5 
+			{
+			    background-color: #0D0D0D;
+			    font-family: 'Iceland', cursive;
+			    color: #fff;
+			    font-size:16px;
+			    text-align: center;				
+			}
+
+footer  
+	{
+		text-decoration: none;
+		font-size: 14px;
+		color: 	#FFF;
+		text-align: center;
+		
+	}
+div 
+	{
+		text-decoration: none;
+		font-size: 11px;
+		color: 	#FFF;
+	}
+p
+	{
+		font-family: Papyrus, fantasy;
+		color: orange
+	}
+.vip
+	{
+		color: #85C226
+	}
+
+.column a:link {color: #9900FF;}
+.column a:visited {color: #CCCCCC;}
+.column a:hover {color: #FF9933;}
+.column a:focus {color: #333333;}
+.column a:active {color: #CCFF33;}
+.column a {text-decoration: none;}

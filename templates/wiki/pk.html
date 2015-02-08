@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+
+<body>
+<h1><a href='https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.dateparse'>DJango Date Parser</a></h1>
+<p> django.utils.dateparse methos:
+  <ul>
+    <li>raise ValueError if their input is well formatted but isn't a valid date or time.</li>
+    <li>return None if it isn't well formatted at all.</li>
+  </ul>
+
+<table border='1'>
+  <tr>
+    <th>Variable</th>
+    <th>Value</th>
+  </tr>
+
+  {% for var, val in parsedValues.items %}
+    <tr>
+      <td>{{var}}</td>
+      <td>{{val}}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
